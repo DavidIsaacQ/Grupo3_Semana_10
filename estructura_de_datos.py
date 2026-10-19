@@ -141,3 +141,23 @@ def listar_expedientes():
         print(f"  Asunto: {asuntos[i]}")
         print(f"  Descripción: {descripciones[i]}")
         print("-" * 50)
+
+def ejecutar_sistema():
+    """Controla el flujo principal del programa mediante el menú."""
+    while True:
+        mostrar_menu()
+        opcion = input("Seleccione una opción del menú: ").strip()
+
+        if opcion == str(OPCION_REGISTRAR):
+            registrar_expediente()
+        elif opcion == str(OPCION_LISTAR):
+            listar_expedientes()
+        elif opcion == str(OPCION_SALIR):
+            print("\nGracias por usar la Mesa de Partes Digital. ¡Hasta luego!")
+            break
+        else:
+            print("Error: Opción no válida. Por favor, intente de nuevo.")
+
+
+ejecutar_sistema()
+    
