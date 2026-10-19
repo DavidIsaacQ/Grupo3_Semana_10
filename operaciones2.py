@@ -1,9 +1,9 @@
 def registrar_expediente():
     """Solicita, valida y almacena los datos de un nuevo expediente."""
-    config.mostrar_titulo("REGISTRAR NUEVO EXPEDIENTE")
+    mostrar_titulo("REGISTRAR NUEVO EXPEDIENTE")
 
     # Generar código correlativo automático (EXP-001, EXP-002, etc.)
-    nuevo_codigo = f"EXP-{len(config.codigos) + 1:03d}"
+    nuevo_codigo = f"EXP-{len(codigos) + 1:03d}"
     print(f"Código asignado: {nuevo_codigo}")
 
     # Validar DNI
@@ -29,34 +29,34 @@ def registrar_expediente():
     descripcion = solicitar_texto("Ingrese la descripción detallada: ")
 
     # Almacenar en las listas globales del módulo config
-    config.codigos.append(nuevo_codigo)
-    config.dnis.append(dni)
-    config.nombres.append(nombres_ingresados)
-    config.apellidos.append(apellidos_ingresados)
-    config.correos.append(correo)
-    config.telefonos.append(tel)
-    config.tipos_documento.append(tipo_doc)
-    config.asuntos.append(asunto)
-    config.descripciones.append(descripcion)
+    codigos.append(nuevo_codigo)
+    dnis.append(dni)
+    nombres.append(nombres_ingresados)
+    apellidos.append(apellidos_ingresados)
+    correos.append(correo)
+    telefonos.append(tel)
+    tipos_documento.append(tipo_doc)
+    asuntos.append(asunto)
+    descripciones.append(descripcion)
 
     print(f"\n¡Éxito! Expediente {nuevo_codigo} registrado correctamente.")
 
 
 def listar_expedientes():
     """Muestra todos los expedientes registrados."""
-    config.mostrar_titulo("LISTADO DE EXPEDIENTES")
+    mostrar_titulo("LISTADO DE EXPEDIENTES")
 
-    if not config.codigos:
+    if not codigos:
         print("No hay expedientes registrados en el sistema.")
         return
 
-    for i in range(len(config.codigos)):
-        print(f"Expediente N° {i + 1} - Código: {config.codigos[i]}")
-        print(f"  Ciudadano: {config.nombres[i]} {config.apellidos[i]}")
+    for i in range(len(codigos)):
+        print(f"Expediente N° {i + 1} - Código: {codigos[i]}")
+        print(f"  Ciudadano: {nombres[i]} {apellidos[i]}")
         print(
-            f"  Identificación: {config.dnis[i]} | Tipo de Documento: {config.tipos_documento[i]}"
+            f"  Identificación: {dnis[i]} | Tipo de Documento: {tipos_documento[i]}"
         )
-        print(f"  Contacto: Tel: {config.telefonos[i]} | Correo: {config.correos[i]}")
-        print(f"  Asunto: {config.asuntos[i]}")
-        print(f"  Descripción: {config.descripciones[i]}")
+        print(f"  Contacto: Tel: {telefonos[i]} | Correo: {correos[i]}")
+        print(f"  Asunto: {asuntos[i]}")
+        print(f"  Descripción: {descripciones[i]}")
         print("-" * 50)
