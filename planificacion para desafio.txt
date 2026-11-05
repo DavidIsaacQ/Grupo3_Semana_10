@@ -1,0 +1,21 @@
+ACTORES:
+- Scrum Master (SM)
+- Product Owner (PO)
+- Team Dev (TD)
+
+PRODUCT BACKING Historia de usuario. 
+SPRNT BACKING planificar el sprint dura una semana
+DOING historia de usuario
+QA calidad, observaciones, sino pasa regresa
+UAT (opcional) Ver criterios de aceptación. 
+DONE Todos los equipos deben tener una definición de hecho, cuando todos los escenarios estén probados.
+PRD Pasar a producción.
+
+CEREMONIAS:
+
+- Sprint Planning: Estimación de HU. Complejidad y esfuerzo. Que tan complejo o que tanto esfuerzo demande. Revisar HU1, tener claro que se hace, se empieza a votar. para eso usar la pagina planning pocker. Cada uno le va dar un puntaje a la HU1 estimando lo mencionado. C y E. y dar un puntaje en escala de Fibonacci. Llegar solo hasta 21. Sustentar los puntajes, una vez sustentado volver a votar. Una vez designado decidir cuantas HU  se harán.
+- Daily Meeting: Reunión donde cada integrante dice qué hizo ayer, que va hacer hoy y si tiene algún impedimento. (No más de 15 minutos)
+- Sprint Review:
+- Sprint Retrospetive:
+
+Para la prox semana tener 1 video sprint planning y 5 videos daily.
