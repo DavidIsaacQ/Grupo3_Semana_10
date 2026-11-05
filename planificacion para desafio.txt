@@ -19,3 +19,12 @@ CEREMONIAS:
 - Sprint Retrospetive:
 
 Para la prox semana tener 1 video sprint planning y 5 videos daily.
+
+
+HU01: Verificación en 2 pasos
+Como: Rol
+Quiero: Funcionalidad
+Para: Finalidad
+
+Criterios de aceptación
+etc.
