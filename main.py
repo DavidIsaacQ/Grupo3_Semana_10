@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-# Definir estructuras base de almacenamiento paralelo
-
+# definir estructuras base de almacenamiento paralelo
 codigos = []
 dnis = []
 nombres = []
@@ -8,15 +6,12 @@ apellidos = []
 correos = []
 telefonos = []
 asuntos = []
-=======
-# Definir estructuras base de almacenamiento paralelo
-
-codigos = []
-dnis = []
-nombres = []
-apellidos = []
-correos = []
-telefonos = []
-asuntos = []
->>>>>>> 43b71c6d13feaf242324fb7d8be0567b0bee7952
 descripciones = []
+
+
+# configurar opciones principales del menu
+OPCION_REGISTRAR = "1"
+OPCION_BUSCAR = "2"
+OPCION_LISTAR = "3"
+OPCION_SALIR = "4"
+
