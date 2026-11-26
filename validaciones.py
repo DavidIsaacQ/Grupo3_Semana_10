@@ -12,3 +12,11 @@ def solicitar_telefono():
             return telefono
         print("[!] Error: El teléfono debe tener exactamente 9 dígitos numéricos.")
 
+def solicitar_correo():
+    while True:
+        correo = input("Ingrese Correo electrónico: ").strip().lower()
+        if "@" in correo and "." in correo.split("@")[-1] and " " not in correo:
+            return correo
+        print("[!] Error: Ingrese un correo electrónico válido (ej. usuario@dominio.com).")
+
+
