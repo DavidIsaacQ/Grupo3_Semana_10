@@ -26,6 +26,13 @@ def solicitar_nombre_valido(mensaje):
         if len(texto) >= 2 and texto.replace(" ", "").isalpha():
             return texto.title()
         print("[!] Error: Ingrese solo letras (mínimo 2 caracteres).")
+
+def solicitar_texto_obligatorio(mensaje):
+    while True:
+        texto = input(mensaje).strip()
+        if len(texto) >= 3:
+            return texto
+        print("[!] Error: Este campo es obligatorio (mínimo 3 caracteres).")
         
 
 correo_valido = solicitar_correo()
