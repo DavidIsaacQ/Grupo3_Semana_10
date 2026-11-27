@@ -15,8 +15,11 @@ def solicitar_telefono():
 def solicitar_correo():
     while True:
         correo = input("Ingrese Correo electrónico: ").strip().lower()
-        if "@" in correo and "." in correo.split("@")[-1] and " " not in correo:
+        partes = correo.split("@")
+        if len(partes) == 2 and len(partes[0]) > 0 and "." in partes [1] and " " not in correo:
             return correo
-        print("[!] Error: Ingrese un correo electrónico válido (ej. usuario@dominio.com).")
+        print ("Error: Formato de correo invalido. ")
 
+correo_valido = solicitar_correo()
+print("Correo registrado correctamente:", correo_valido)
 
