@@ -20,6 +20,13 @@ def solicitar_correo():
             return correo
         print ("Error: Formato de correo invalido. ")
 
+def solicitar_nombre_valido(mensaje):
+    while True:
+        texto = input(mensaje).strip()
+        
+
 correo_valido = solicitar_correo()
 print("Correo registrado correctamente:", correo_valido)
 
+dni_valido = solicitar_dni()
+print("DNI ingresado:" , dni_valido)
